@@ -57,6 +57,7 @@ end)
                         game.StarterGui:SetCore("SendNotification", {
                         Title    = "TokwaWare.cc",
                         Text     = "loaded",
+                        Icon     = "http://www.roblox.com/asset/?id=10018403888",
                         Duration = 1
         
                    })
@@ -82,6 +83,7 @@ end)
                 game.StarterGui:SetCore("SendNotification", {
         Title = "TokwaWare.cc";
         Text = "Target: "..tostring(Plr.Character.Humanoid.DisplayName);
+        Icon  = "http://www.roblox.com/asset/?id=10018403888";
     
     })
     end
@@ -93,6 +95,7 @@ end)
                         game.StarterGui:SetCore("SendNotification", {
                         Title    = "TokwaWare.cc",
                         Text     = ".unlocked on",
+                        Icon  = "http://www.roblox.com/asset/?id=10018403888",
                         Duration = 1
                })
            elseif getgenv().Target == false then
