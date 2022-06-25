@@ -9,7 +9,6 @@ getgenv().NotifMode = false
     getgenv().AirshotFunccc = false
     getgenv().Partz = "LowerTorso"
 getgenv().AutoPrediction = false
-getgenv().LookAt = false
 --
     _G.Types = {
         Ball = Enum.PartType.Ball,
@@ -202,10 +201,3 @@ end
         end
     end
     end
-    if getgenv().LookAt and Locking and getgenv().Enabled then
-                    local Char = game.Players.LocalPlayer.Character
-                local PrimaryPartOfChar = game.Players.LocalPlayer.Character.PrimaryPart
-                local NearestChar = Plr.Character
-                local NearestRoot = Plr.Character.HumanoidRootPart
-                local NearestPos = CFrame.new(PrimaryPartOfChar.Position, Vector3.new(NearestRoot.Position.X, NearestRoot.Position.Y, NearestRoot.Position.Z))
-                Char:SetPrimaryPartCFrame(NearestPos)
